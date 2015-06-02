@@ -1,10 +1,16 @@
 # JIMEnvironments
 
-A simple solution to handle evironment specific settings. It uses the current `Build Configuration` name to retrieve settings from a `Plist` file.
+A simple solution to handle environment specific settings. It uses the current `Build Configuration` name to retrieve settings from a `Plist` file.
 
 ## Installation
 
-Just drag the class files into your project, also the `Environments.plist` file, there's no need to create an instance of it, it's a self-instantiating singleton.
+Via CocoaPods
+
+```ruby
+pod "JIMEnvironments", "~> 1.0.0"
+```
+
+Or, just drag the class files into your project, also the `Environments.plist` file, there's no need to create an instance of it, it's a self-instantiating singleton.
 
 ## Setup
 
@@ -20,10 +26,3 @@ Add as many keys you want for each build configuration dictionary, then, you can
 ```objc
 [JIMEnvironments sharedInstance].environment[@"ApiMainUrl"]
 ```
-
-
-
-
-
-
-
