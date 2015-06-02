@@ -15,6 +15,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = {:git => "https://github.com/nebiros/JIMEnvironments.git", :tag => s.version.to_s}
   s.source_files = "JIMEnvironments/*.{h,m}"
-  s.resource     = "JIMEnvironments/Environments.plist"
   s.requires_arc =  true
 end
